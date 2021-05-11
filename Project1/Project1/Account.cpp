@@ -8,7 +8,7 @@ void Account::set_percent(double percent)
 	}
 	else
 	{
-		throw invalid_argument("Процент должен быть больше нуля");
+		throw invalid_argument("РџСЂРѕС†РµРЅС‚ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ РЅСѓР»СЏ");
 	}
 }
 Account::Account(string surname, string account_number, double percent, double sum)
@@ -30,7 +30,7 @@ void Account::set_withdraw_money(double money)
 	}
 	else
 	{
-		throw invalid_argument("Нельзя снять больше, чем лежит на счету");
+		throw invalid_argument("РќРµР»СЊР·СЏ СЃРЅСЏС‚СЊ Р±РѕР»СЊС€Рµ, С‡РµРј Р»РµР¶РёС‚ РЅР° СЃС‡РµС‚Сѓ");
 	}
 }
 void Account::set_add_money(double money)
@@ -41,7 +41,7 @@ void Account::set_add_money(double money)
 	}
 	else
 	{
-		throw invalid_argument("Нельзя положить отрицательную сумму");
+		throw invalid_argument("РќРµР»СЊР·СЏ РїРѕР»РѕР¶РёС‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅСѓСЋ СЃСѓРјРјСѓ");
 	}
 }
 void Account::set_accural_percent()
