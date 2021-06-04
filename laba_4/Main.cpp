@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 #include"Ball.h"
 #include"Cylinder.h"
 #include"Pyramid.h"

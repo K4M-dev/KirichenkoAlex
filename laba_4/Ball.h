@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include"Figure.h"
 /**
 * \brief  Класс шар

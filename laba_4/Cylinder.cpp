@@ -1,4 +1,4 @@
-﻿#include"Cylinder.h"
+#include"Cylinder.h"
 Cylinder::Cylinder(double a, double b) :height{ a }, radius{ b }{}
 double Cylinder::Volume()const {
 	return M_PI * pow(radius, 2) * height;
