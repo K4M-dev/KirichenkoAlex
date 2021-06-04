@@ -38,7 +38,7 @@ int DiffBetweenDate2(Date& Date1, Date& Date2) {
 }
 int DiffBetweenDate3(Date& Date1, Date& Date2) {
 	if (Date1.Check() || Date2.Check())
-		throw invalid_argument{ "Дата введена неправильно, стандартное исключение" };
+		throw invalid_argument{ "Р”Р°С‚Р° РІРІРµРґРµРЅР° РЅРµРїСЂР°РІРёР»СЊРЅРѕ, СЃС‚Р°РЅРґР°СЂС‚РЅРѕРµ РёСЃРєР»СЋС‡РµРЅРёРµ" };
 	else
 		return Difference(Date1, Date2);
 }
@@ -50,13 +50,13 @@ int DiffBetweenDate4(Date& Date1, Date& Date2) {
 }
 int DiffBetweenDate5(Date& Date1, Date& Date2) {
 	if (Date1.Check() || Date2.Check())
-		throw Exception2("Дата введена неправильно, независимый класс с полями-параметрами функции");
+		throw Exception2("Р”Р°С‚Р° РІРІРµРґРµРЅР° РЅРµРїСЂР°РІРёР»СЊРЅРѕ, РЅРµР·Р°РІРёСЃРёРјС‹Р№ РєР»Р°СЃСЃ СЃ РїРѕР»СЏРјРё-РїР°СЂР°РјРµС‚СЂР°РјРё С„СѓРЅРєС†РёРё");
 	else
 		return Difference(Date1, Date2);
 }
 int DiffBetweenDate6(Date& Date1, Date& Date2) {
 	if (Date1.Check() || Date2.Check())
-		throw Exception3("Дата введена неправильно, класс наследник");
+		throw Exception3("Р”Р°С‚Р° РІРІРµРґРµРЅР° РЅРµРїСЂР°РІРёР»СЊРЅРѕ, РєР»Р°СЃСЃ РЅР°СЃР»РµРґРЅРёРє");
 	else
 		return Difference(Date1, Date2);
 }
