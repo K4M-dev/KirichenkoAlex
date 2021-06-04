@@ -8,14 +8,14 @@ int main() {
 		cout << DiffBetweenDate1(FirstDate, SecondDate) << endl;
 	}
 	catch(...) {
-		cout << "Äàòà ââåäåíà íåïğàâèëüíî!" << endl;
+		cout << "Ğ”Ğ°Ñ‚Ğ° Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ° Ğ½ĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ğ¾!" << endl;
 	}
 
 	try {
 		cout << DiffBetweenDate2(FirstDate, SecondDate) << endl;
 	}
 	catch (int) {
-		cout << "Äàòà ââåäåíà íåïğàâèëüíî!,ñïåöèôèêàòîğ throw" << endl;
+		cout << "Ğ”Ğ°Ñ‚Ğ° Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ° Ğ½ĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ğ¾!,ÑĞ¿ĞµÑ†Ğ¸Ñ„Ğ¸ĞºĞ°Ñ‚Ğ¾Ñ€ throw" << endl;
 	}
 
 	try {
@@ -29,7 +29,7 @@ int main() {
 		cout << DiffBetweenDate4(FirstDate, SecondDate) << endl;
 	}
 	catch (Exception) {
-		cerr << "Äàòà ââåäåíà íåïğàâèëüíî!,ïóñòîé êëàññ" << endl;
+		cerr << "Ğ”Ğ°Ñ‚Ğ° Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ° Ğ½ĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ğ¾!,Ğ¿ÑƒÑÑ‚Ğ¾Ğ¹ ĞºĞ»Ğ°ÑÑ" << endl;
 	}
 
 	try {
