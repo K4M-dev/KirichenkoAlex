@@ -12,74 +12,74 @@ private:
 	double percent;
 	double sum;
 	/**
-	 \brief	Сеттер проверяющий процент на положительность
+	 \brief	РЎРµС‚С‚РµСЂ РїСЂРѕРІРµСЂСЏСЋС‰РёР№ РїСЂРѕС†РµРЅС‚ РЅР° РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ
 	 */
 	void set_percent(double percent);
 public:
 	/**
-	 \brief	Конструктор с параметрами
+	 \brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	 */
 	explicit Account(string& surname, string& account_number, double percent, double sum);
 	/**
-	 \brief	Деструктор
+	 \brief	Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	 */
 	~Account() = default;
 	/**
-	\brief	Конструктор копирования по умолчанию.
+	\brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
 	*/
 	Account(const  Account&) = default;
 	/**
-	\brief	Конструктор присваивания по умолчанию.
+	\brief	РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
 	*/
 	Account& operator=(const  Account&) = default;
 	/**
-	 \brief	Получаем фамилию
+	 \brief	РџРѕР»СѓС‡Р°РµРј С„Р°РјРёР»РёСЋ
 	 \returns	surname.
 	 */
 	string& get_surname();
 	/**
-	 \brief	Получаем номер аккаунта
+	 \brief	РџРѕР»СѓС‡Р°РµРј РЅРѕРјРµСЂ Р°РєРєР°СѓРЅС‚Р°
 	 \returns	account number
 	 */
 	string& get_account_number();
 	/**
-	 \brief	Получаем процент
+	 \brief	РџРѕР»СѓС‡Р°РµРј РїСЂРѕС†РµРЅС‚
 	 \returns	percent
 	 */
 	double get_percent();
 	/**
-	 \brief	Получаем сумму
+	 \brief	РџРѕР»СѓС‡Р°РµРј СЃСѓРјРјСѓ
 	 \returns	sum
 	 */
 	double get_sum();
 	/**
-	 \brief	Получаем новую фамилию
+	 \brief	РџРѕР»СѓС‡Р°РµРј РЅРѕРІСѓСЋ С„Р°РјРёР»РёСЋ
 	 */
 	void set_surname(string surname);
 	/**
-	 \brief	Снимаем деньги
+	 \brief	РЎРЅРёРјР°РµРј РґРµРЅСЊРіРё
 	 */
 	void set_withdraw_money(double money);
 	/**
-	 \brief	Пополняем деньги
+	 \brief	РџРѕРїРѕР»РЅСЏРµРј РґРµРЅСЊРіРё
 	 */
 	void set_add_money(double money);
 	/**
-	 \brief	Зачислить процент
+	 \brief	Р—Р°С‡РёСЃР»РёС‚СЊ РїСЂРѕС†РµРЅС‚
 	 */
 	void set_accural_percent();
 	/**
-	 \brief	Получаем в долларах
+	 \brief	РџРѕР»СѓС‡Р°РµРј РІ РґРѕР»Р»Р°СЂР°С…
 	 \returns	sum
 	 */
 	double get_in_euro(double euro);
 	/**
-	 \brief	Получаем св евро
+	 \brief	РџРѕР»СѓС‡Р°РµРј СЃРІ РµРІСЂРѕ
 	 \returns	sum = sum / dollar
 	 */
 	double get_in_dollar(double dollar) ;
 	/**
-	\brief	Оператор сдвига
+	\brief	РћРїРµСЂР°С‚РѕСЂ СЃРґРІРёРіР°
 	*/
 	friend ostream& operator<<(ostream& out, const Account& acc);
 };
