@@ -71,11 +71,11 @@ Date::Date(int year, int month, int day) : Triad(year, month, day) {
             }
             break;
         default:
-            throw invalid_argument{ "Дата введена неправильно" };
+            throw invalid_argument{ "Р”Р°С‚Р° РІРІРµРґРµРЅР° РЅРµРїСЂР°РІРёР»СЊРЅРѕ" };
         }	
 	}
 	else
-		throw invalid_argument{ "Дата введена неправильно" };
+		throw invalid_argument{ "Р”Р°С‚Р° РІРІРµРґРµРЅР° РЅРµРїСЂР°РІРёР»СЊРЅРѕ" };
 }
 Date::~Date()=default;
 

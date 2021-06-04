@@ -12,16 +12,16 @@ ostream& operator << (ostream& out, const Triad& Other) {
 int main() {
 	setlocale(LC_ALL, "Russian");
 	Triad ObjTriad(1, 2, 3);
-	cout << "Òðèàäà, óâåëè÷åííàÿ íà 1 ðàâíà:" << ObjTriad.Increase() << endl<<endl;
+	cout << "Ð¢Ñ€Ð¸Ð°Ð´Ð°, ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð½Ð°Ñ Ð½Ð° 1 Ñ€Ð°Ð²Ð½Ð°:" << ObjTriad.Increase() << endl<<endl;
 	try
 	{
 		Date objDate(2002, 3,31);
-		cout << "Èñõîäíàÿ äàòà: " << objDate << endl << endl;
-		cout << "Äàòà óâåëè÷åííàÿ íà 1 ðàâíà: " << objDate.Increase() << endl << endl;
+		cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ð°Ñ Ð´Ð°Ñ‚Ð°: " << objDate << endl << endl;
+		cout << "Ð”Ð°Ñ‚Ð° ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð½Ð°Ñ Ð½Ð° 1 Ñ€Ð°Ð²Ð½Ð°: " << objDate.Increase() << endl << endl;
 		int n;
-		cout << "Ââåäèòå êîë-âî äíåé ïðèáàâëÿåìûõ ê äàòå: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ð´Ð½ÐµÐ¹ Ð¿Ñ€Ð¸Ð±Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ñ… Ðº Ð´Ð°Ñ‚Ðµ: ";
 		cin >> n;
-		cout << "Ïîëó÷åííàÿ äàòà: " << objDate.addDay(n) << endl << endl;
+		cout << "ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ð°Ñ Ð´Ð°Ñ‚Ð°: " << objDate.addDay(n) << endl << endl;
 	}
 	catch (invalid_argument error)
 	{
